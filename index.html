@@ -215,6 +215,66 @@
             margin-bottom: 1.5rem;
         }
 
+        /* Testimonials Section */
+        .testimonials {
+            background: linear-gradient(135deg, #f0f8f0 0%, #e8f5e8 100%);
+            padding: 5rem 0;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #6B8E23;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .testimonials-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 4rem;
+            font-style: italic;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+            border-left: 5px solid #6B8E23;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .testimonial-quote {
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-size: 1.1rem;
+            color: #2E7D32;
+            font-weight: 600;
+            text-align: right;
+        }
+
         /* Call to Action */
         .cta {
             background: linear-gradient(135deg, #6B8E23 0%, #558B2F 100%);
@@ -415,6 +475,11 @@
                 gap: 2rem;
             }
 
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
             .teacher-content {
                 grid-template-columns: 1fr;
                 gap: 3rem;
@@ -422,6 +487,12 @@
 
             .teacher-image {
                 order: -1;
+            }
+        }
+
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -509,6 +580,31 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <p class="testimonials-subtitle">Hear from those who have experienced the healing power of Somatic Yoga</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"I just love your class so much, Jeannine. And even when I am in pain, I just am drawn to be there. It's not like pushing myself at all. It is so much more than just a yoga class, it's the somatic, the people in the class, the beautiful energy, the laughter, and most of all you. Lots of love."</p>
+                    <p class="testimonial-author">— Rosemary</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Jeannine, sweet somatic yoga master, you have taught me much about yoga and I am able to enjoy my practice at home too. Soothe my sore muscles. You are such a wonderful teacher. You also taught me to honour my body and to listen. I am very grateful. I think it's the most important part of yoga."</p>
+                    <p class="testimonial-author">— Pam</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"I have noticed a difference since the change to somatic. I am much more aware of my body, especially the problem areas, and what to do about them. I am amazed that at 70 I am learning what various body parts are called and how they interact. Jeannine, you have taught me so much anatomy, as well how to calm myself and relax the tight areas. Thanks so much!"</p>
+                    <p class="testimonial-author">— Cindy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Classes Section -->
     <section class="classes">
         <div class="container">
@@ -549,7 +645,7 @@
             <p>Experience the transformative power of Gentle Somatic Yoga</p>
             
             <div class="contact-info">
-                <p class="contact-item">📧 <a href="mailto:jeannines.one@gmail.com">jeannines.one@gmail.com</a></p>
+                <p class="contact-item">📧 <a href="/cdn-cgi/l/email-protection#29434c48474740474c5a0746474c694e44484045074a4644"><span class="__cf_email__" data-cfemail="a0cac5c1cecec9cec5d38ecfcec5e0c7cdc1c9cc8ec3cfcd">[email&#160;protected]</span></a></p>
                 <p class="contact-item">📱 <a href="tel:+19024309809">(902) 430-9809</a></p>
                 <p class="contact-item">💙 <a href="https://www.facebook.com/soulsistersyoga1" target="_blank">Soul Yoga on Facebook</a></p>
             </div>
@@ -558,9 +654,4 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Gentle Somatic Yoga • Halifax & Dartmouth, Nova Scotia</p>
-        </div>
-    </footer>
-</body>
-</html>
+        <div class="co
